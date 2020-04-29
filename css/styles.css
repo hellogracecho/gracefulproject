@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #0a8cd2;
+}
+
+form h1 {
+  color: #0a8cd2;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+form input[type=submit] {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  background: #0a8cd2;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+form input[type=submit]:hover, form input[type=submit]:active, form input[type=submit]:focus {
+  background: #479fcf;
+  outline: none;
+}
+
+form .disable {
+  pointer-events: none !important;
+  background: #ababab !important;
+  cursor: unset !important;
+}
+
+form .input-element {
+  position: relative;
+  margin-bottom: 20px;
+  /* Input Box Style */
+}
+
+form .input-element .input-box {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  border: 1px solid #0a8cd2;
+}
+
+form .input-element .input-box:focus {
+  outline: none;
+}
+
+form .input-element label {
+  color: #0a8cd2;
+  background: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  top: -10px;
+  left: 5px;
+  padding: 0 6px;
+  position: absolute;
+  pointer-events: none;
+}
+
+form .input-element label.error {
+  top: -25px;
+  left: unset;
+  right: 5px;
+  padding: 0 6px;
+  margin: 15px 0;
+  border-radius: 3px;
+  color: #cf4747;
+}
+
+form .text-area {
+  position: relative;
+  margin: 0;
+}
+
+form .text-area label {
+  position: absolute;
+  color: #0a8cd2;
+  background: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  top: -10px;
+  left: 5px;
+  padding: 0 6px;
+}
+
+form .text-area textarea {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  border: 1px solid #0a8cd2;
+}
+
+form .text-area textarea:focus {
+  outline: none;
+}
+
+form .names {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  form .names {
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.message-required p {
+  color: #0a8cd2;
+  margin: -10px 0 15px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.success {
+  padding: 10px;
+  margin: 15px 0 0;
+  border-radius: 3px;
+  background-color: #eef7fc;
+  color: #0a8cd2;
+  border: 1px solid #0a8cd2;
+}
+
+.error-server {
+  padding: 10px;
+  margin: 15px 0 0;
+  border-radius: 3px;
+  color: #cf4747;
+  background-color: #f9e9e9;
+  border: 1px solid #cf4747;
+}
+/*# sourceMappingURL=styles.css.map */

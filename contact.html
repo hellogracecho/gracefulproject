@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Form</title>
+</head>
+<!-- TODO PHP AJAX implement for submitting forms without reloading the page  -->
+
+<body>
+    <form id="contact-form" action="" method="post">
+        <!-- Method can be set as POST for hiding values in URL-->
+        <h1>Get in touch</h1>
+        <div class="names">
+            <span class="input-element">
+                <label for="firstName">First Name *</label>
+                <input class="input-box" name="firstName" id="firstName" type="text" value="">
+            </span>
+            <span class="input-element">
+                <label for="lastName">Last Name</label>
+                <input class="input-box" name="lastName" id="lastName" type="text" value="">
+            </span>
+        </div>
+        <div class="input-element">
+            <label for="email">Email *</label>
+            <input class="input-box" name="email" id="email" type="text" value="">
+        </div>
+        <div class="input-element">
+            <label for="contact">Contact Nmuber *</label>
+            <input class="input-box" name="contact" id="contact" type="tel" value="">
+        </div>
+        <div class="input-element text-area">
+            <label for="message">Message</label>
+            <textarea cols="25" name="message" id="message" rows="6"></textarea><br>
+        </div>
+        <div class="message-required">
+            <p>* is required field.</p>
+        </div>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        <div id="status"></div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
