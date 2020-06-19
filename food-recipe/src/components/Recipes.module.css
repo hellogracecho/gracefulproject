@@ -1,0 +1,11 @@
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px 20px;
+  margin-top: 40px;
+}
+
+.search-result {
+  color: #fff6a4;
+  margin-bottom: 20px;
+}
